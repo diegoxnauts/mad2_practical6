@@ -136,7 +136,7 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
     * in subclasses to detect error. Do not dismiss controller immediately.
     * @param error The error object
     **/
-    public func didFailWithError(error: NSError) {
+     open func didFailWithError(error: NSError) {
         print("Error: \(error.description)")
     }
     

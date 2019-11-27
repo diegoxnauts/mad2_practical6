@@ -7,21 +7,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Scan QR-->
+        <scene sceneID="0Gh-mv-2zk">
+            <objects>
+                <viewController title="Scan QR" id="Y0A-j9-p2c" customClass="QRScannerViewController" customModule="mad2_practical6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kZw-lD-Ynz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7b-nn-E6L">
+                                <rect key="frame" x="157" y="109" width="100" height="30"/>
+                                <state key="normal" title="Scan QR Code"/>
+                                <connections>
+                                    <action selector="scanAction:" destination="Y0A-j9-p2c" eventType="touchUpInside" id="94A-k8-OKD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zX9-Wr-Yaq" firstAttribute="trailing" secondItem="F7b-nn-E6L" secondAttribute="trailing" constant="157" id="Gv6-3f-Skt"/>
+                            <constraint firstItem="F7b-nn-E6L" firstAttribute="top" secondItem="zX9-Wr-Yaq" secondAttribute="top" constant="65" id="I1q-vp-ILd"/>
+                            <constraint firstItem="F7b-nn-E6L" firstAttribute="leading" secondItem="zX9-Wr-Yaq" secondAttribute="leading" constant="157" id="NQi-0F-auT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zX9-Wr-Yaq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="QR Camera" id="90l-zv-VO6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EpW-h4-RBv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="1528"/>
+        </scene>
+        <!--Favourites-->
         <scene sceneID="EVE-pf-Cag">
             <objects>
-                <viewController id="TfW-GG-oeH" sceneMemberID="viewController">
+                <viewController title="Favourites" id="TfW-GG-oeH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SSx-uH-I2c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="rma-0U-XmR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="mXy-nW-bam"/>
+                    <tabBarItem key="tabBarItem" title="Favourites" image="star.fill" catalog="system" id="mXy-nW-bam"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ah-hJ-XmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="763"/>
+            <point key="canvasLocation" x="138" y="753"/>
         </scene>
         <!--Generate QR-->
         <scene sceneID="3W2-oZ-xFt">
@@ -75,6 +105,7 @@
                     <connections>
                         <segue destination="xBw-ZU-F49" kind="relationship" relationship="viewControllers" id="7ph-uI-pKf"/>
                         <segue destination="TfW-GG-oeH" kind="relationship" relationship="viewControllers" id="s19-M1-wV2"/>
+                        <segue destination="Y0A-j9-p2c" kind="relationship" relationship="viewControllers" id="yX1-Fq-rB2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mpt-Zn-rBM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,4 +113,7 @@
             <point key="canvasLocation" x="-1110" y="379"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
+    </resources>
 </document>

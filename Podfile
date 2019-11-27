@@ -7,5 +7,5 @@ target 'mad2_practical6' do
 
   # Pods for mad2_practical6
   pod 'QRCoder', '~> 1.1'
-
+  pod 'QRCodeReader.swift', '~> 10.1'
 end

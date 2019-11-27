@@ -1,16 +1,20 @@
 PODS:
   - QRCoder (1.1.0)
+  - QRCodeReader.swift (10.1.0)
 
 DEPENDENCIES:
   - QRCoder (~> 1.1)
+  - QRCodeReader.swift (~> 10.1)
 
 SPEC REPOS:
   trunk:
     - QRCoder
+    - QRCodeReader.swift
 
 SPEC CHECKSUMS:
   QRCoder: cbd2bee531cc86d286df7942334cfed94c803ae4
+  QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
 
-PODFILE CHECKSUM: ed47dad8b66723d4610983b0a1481d16f72957eb
+PODFILE CHECKSUM: b4c5ed0db26379a4baab2f54f58af23579231adf
 
 COCOAPODS: 1.8.4
