@@ -1,0 +1,16 @@
+PODS:
+  - QRCoder (1.1.0)
+
+DEPENDENCIES:
+  - QRCoder (~> 1.1)
+
+SPEC REPOS:
+  trunk:
+    - QRCoder
+
+SPEC CHECKSUMS:
+  QRCoder: cbd2bee531cc86d286df7942334cfed94c803ae4
+
+PODFILE CHECKSUM: ed47dad8b66723d4610983b0a1481d16f72957eb
+
+COCOAPODS: 1.8.4
